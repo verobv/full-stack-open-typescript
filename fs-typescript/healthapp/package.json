@@ -1,0 +1,32 @@
+{
+  "name": "healthapp",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "Vero Bruno",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "typecheck": "tsc",
+    "calculateBmi": "npm run typecheck && tsx bmiCalculator.ts",
+    "calculateExercises": "npm run typecheck && tsx exerciseCalculator.ts",
+    "start": "tsx index.ts",
+    "dev": "concurrently \"tsc --watch\" \"tsx --watch index.ts\"",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.1.1",
+    "concurrently": "^10.0.3",
+    "eslint": "^10.7.0",
+    "tsx": "^4.23.1",
+    "typescript": "5.9",
+    "typescript-eslint": "^8.64.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
